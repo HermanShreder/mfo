@@ -1,0 +1,73 @@
+diff --git a//dev/null b/styles.css
+index 0000000000000000000000000000000000000000..ee09b7166f09bb63967f97f3a2046539fe378ea7 100644
+--- a//dev/null
++++ b/styles.css
+@@ -0,0 +1,68 @@
++body {
++    font-family: Arial, sans-serif;
++    margin: 0;
++    padding: 0;
++    background-color: #f9f9f9;
++}
++
++header {
++    text-align: center;
++    padding: 20px;
++    background-color: #ffffff;
++    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
++}
++
++.companies {
++    display: grid;
++    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
++    gap: 20px;
++    padding: 20px;
++}
++
++.company {
++    background-color: #ffffff;
++    border: 1px solid #e0e0e0;
++    border-radius: 8px;
++    padding: 15px;
++    display: flex;
++    flex-direction: column;
++    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
++}
++
++.company img {
++    width: 100%;
++    height: auto;
++    border-radius: 4px;
++}
++
++.company h2 {
++    font-size: 1.2rem;
++    margin: 10px 0;
++}
++
++.company ul {
++    list-style: disc;
++    padding-left: 20px;
++    flex-grow: 1;
++}
++
++.btn {
++    display: block;
++    text-align: center;
++    padding: 10px;
++    margin-top: 10px;
++    background-color: #007bff;
++    color: #ffffff;
++    text-decoration: none;
++    border-radius: 4px;
++}
++
++.btn:hover {
++    background-color: #0056b3;
++}
++
++@media (max-width: 600px) {
++    .companies {
++        grid-template-columns: 1fr;
++    }
++}
